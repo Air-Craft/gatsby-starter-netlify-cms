@@ -13,6 +13,30 @@ media_folder: static/img
 public_folder: /img
 
 collections:
+  - name: "tags"
+    label: "Tags"
+    widget: "string"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+
+  - name: "entry"
+    label: "Entry"
+    folder: "src/pages/entry"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {
+          label: "Genres",
+          name: "genres",
+          widget: "relation",
+          collection: "tags",
+          search_fields: ["name"],
+          value_field: "name",
+          display_fields: ["name"],
+        }
+
+
+
   - name: "blog"
     label: "Blog"
     folder: "src/pages/blog"
