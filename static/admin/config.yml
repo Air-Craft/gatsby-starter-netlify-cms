@@ -31,6 +31,8 @@ collections:
           label: "Genres",
           name: "genres",
           widget: "relation",
+          multiple: true,
+          allow_add: true,
           collection: "tags",
           search_fields: ["name"],
           value_field: "name",
