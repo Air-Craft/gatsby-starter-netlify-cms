@@ -28,14 +28,14 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - label: "Genres",
-        name: "genres",
-        widget: "relation",
-        multiple: true,
-        collection: "tagz",
-        search_fields: ["name"],
-        value_field: "name",
-        display_fields: ["name"],
+      - label: "Genres"
+        name: "genres"
+        widget: "relation"
+        multiple: true
+        collection: "tagz"
+        search_fields: ["name"]
+        value_field: "name"
+        display_fields: ["name"]
       - label: "Title"
         name: "title"
         widget: "string"
