@@ -1,3 +1,0 @@
----
-namez: Tantra (neo)
----

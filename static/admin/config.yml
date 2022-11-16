@@ -13,14 +13,13 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "tagz"
-    label: "Tagz"
+  - name: "tags"
+    label: "Tags"
     create: true
-    widget: "string"
-    slug: "{{namez}}"
-    folder: "src/pages/tagz"
+    slug: {{title}}
+    folder: "src/pages/tags"
     fields:
-      - { label: "Namez", name: "namez", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
 
   - name: "entries"
     label: "Entries"
@@ -32,10 +31,10 @@ collections:
         name: "genres"
         widget: "relation"
         multiple: true
-        collection: "tagz"
-        search_fields: ["namez"]
-        value_field: "namez"
-        display_fields: ["namez"]
+        collection: "tags"
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
       - label: "Title"
         name: "title"
         widget: "string"
