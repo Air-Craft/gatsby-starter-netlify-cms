@@ -15,13 +15,15 @@ public_folder: /img
 collections:
   - name: "tags"
     label: "Tags"
+    create: true
     widget: "string"
+    folder: "src/pages/tags"
     fields:
       - { label: "Name", name: "name", widget: "string" }
 
-  - name: "entry"
-    label: "Entry"
-    folder: "src/pages/entry"
+  - name: "entries"
+    label: "Entries"
+    folder: "src/pages/entries"
     create: true
     slug: "{{slug}}"
     fields:
