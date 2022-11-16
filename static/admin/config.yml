@@ -16,7 +16,7 @@ collections:
   - name: "tags"
     label: "Tags"
     create: true
-    slug: {{title}}
+    slug: "{{title}}"
     folder: "src/pages/tags"
     fields:
       - { label: "Title", name: "title", widget: "string" }
