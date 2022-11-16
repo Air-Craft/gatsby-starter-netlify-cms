@@ -33,9 +33,9 @@ collections:
         widget: "relation"
         multiple: true
         collection: "tagz"
-        search_fields: ["name"]
-        value_field: "name"
-        display_fields: ["name"]
+        search_fields: ["namez"]
+        value_field: "namez"
+        display_fields: ["namez"]
       - label: "Title"
         name: "title"
         widget: "string"
